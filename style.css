@@ -1,16 +1,35 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
+/*/background image for mainpage/*/
 .background-image {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(images/gradient.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(images/gradient2.webp);
     background-size: cover;
     background-position: center;
 }
-
+/*/background image for beginthequest/*/
+.background-image2 {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, .8),rgba(0, 0, 0, .8)),url(images/planetbg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#mail{
+    width: 25rem;
+    height: 25rem;
+    position: absolute;
+    left:880px;
+    bottom: 270;
+    transition: 0.3s ease-in-out;
+}
+#mail:hover{
+    transform: scale(1.3);
+}
 
 /*/style for the heart*/
 
@@ -27,7 +46,6 @@
 
 #heart:hover {
     transform: scale(1.3);
-
 }
 
 /*/style for the logo/*/
@@ -45,7 +63,7 @@
   font-style: normal;
   font-family: "Manrope", sans-serif;
   color: #ffffff;
-  font-size: 50px;
+  font-size: 30px;
   letter-spacing: 0px;
   line-height: 1.2;
   text-decoration: none;
@@ -73,9 +91,9 @@
 .navbar ul li{
     list-style: none;
     display: inline-block;
-    margin: 0 20px;
+    margin: 0 25px;
     position: relative;
-    font-size: 25;
+    font-size: 20;
 }
 
 /*style for the navbar text*/
@@ -89,17 +107,19 @@
 
 .navbar ul li::after{
     content: '';
-    height: 4px;
+    height: 2px;
     width: 0%;
-    background: linear-gradient(45deg,#aa0bf3,#2e09d3 );
+    background: linear-gradient(45deg, rgb(56, 2, 251),rgb(151, 2, 251), rgb(222, 2, 251), rgb(251, 2, 81), rgb(222, 2, 251), rgb(56, 2, 251));
     position: absolute;
     left: 0;
-    bottom: -10px;
+    bottom: -5px;
     transition: 0.5s;
+    animation: animate 2s linear infinite;
 }
 
 .navbar ul li:hover:after{
     width:100%;
+    animation: animate2 1s linear infinite
 }
 
 /*style for main text (not the bolded words)*/
@@ -116,7 +136,7 @@
 
 .content h1{
     font-weight: 400;
-    font-size: 70;
+    font-size: 60;
 }
 
 
@@ -132,7 +152,7 @@
 
 /*learn more and begin the quest buttons (below main text)*/
 
-button{
+#mainbuttons{
     width: auto;
     height: auto;
     padding: 15px;
@@ -160,12 +180,12 @@ span{
     transition: all .35s ease-in-out;
 }
 
-button:hover{
+#mainbuttons:hover{
     cursor: pointer;
     transform: scale(1.1); 
     }
 
-button:hover span{
+#mainbuttons:hover span{
     width: 120%;
     height: 120%;
     background: rgb(164, 0, 246);
@@ -198,3 +218,252 @@ button:hover span{
     display: block
 }
 
+.btqcontent {
+   color: white;
+   position: relative;
+   top: 120;
+   left: 50;
+   font-size: 30;
+   text-align: center;
+}
+
+.inputbox{
+    position: relative;
+    width: 250px;
+    left: 850px;
+    top: 380px;
+}
+
+.inputbox input {
+    width: 150%;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.788);
+    border: none;
+    outline: none;
+    box-shadow: none;
+    font-size: 1em;
+    letter-spacing: normal;
+    padding: 10px 0 5px;
+}
+
+#entemailtext {
+    color: rgb(190, 19, 19);
+    position: absolute;
+    top: -210;
+    left:48;
+    letter-spacing: normal;
+    font-weight: 700;
+    width: 300;
+    text-align: center;
+
+}
+
+.inputbox a {
+   position: absolute;
+   left: 0px;
+   padding: 10px 0 5px;
+   color: #ffffff6e;
+   pointer-events: none;
+   letter-spacing: normal;
+   transition: .3s;
+   font-size: 25px;
+   top: -47;
+   left: 110;
+   font-weight: 200;
+   text-align: center;
+   width: 156;
+}
+.inputbox input:valid ~ a,
+.inputbox input:focus ~ a {
+    color: #ffffff6e;
+    transform: translateY(-30px);
+    font-size: 15px;
+    position: absolute;
+    top: -50;
+}
+
+.inputbox i {
+    position: absolute;
+    width: 380px;
+    height: 2px;
+    background: white;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.inputbox i::before {
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left:-100%;
+    background: linear-gradient(45deg, rgb(56, 2, 251),rgb(151, 2, 251), rgb(222, 2, 251), rgb(251, 2, 81), rgb(222, 2, 251), rgb(56, 2, 251));
+    animation: animate 2s linear infinite;
+    transition: .5s;
+}
+
+.inputbox input:valid ~ i::before,
+.inputbox input:focus ~ i::before {
+    left: 0;
+} 
+
+input[type=text]{
+    color: #ffffff;
+    letter-spacing: 1px;
+    font-size:30px;
+    position: absolute;
+    top: -55;
+    left: 3;   
+    font-weight: 200;
+    text-align: center;
+}
+
+@keyframes animate{
+    0%
+    {
+        background-position-x:0;
+    }
+    100%
+    {
+        background-position-x:380px;
+    }
+}
+
+@keyframes animate1{
+    0%
+    {
+        background-position-x:0;
+    }
+    100%
+    {
+        background-position-x:115px;
+    }
+}
+
+@keyframes animate2{
+    0%
+    {
+        background-position-x:0;
+    }
+    100%
+    {
+        background-position-x:115px;
+    }
+}
+
+@keyframes animate3{
+    0%
+    {
+        background-position-x:0;
+    }
+    100%
+    {
+        background-position-x:147px;
+    }
+}
+
+
+
+.submitbtn {
+    position: relative;
+ left: 145;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border: 0px solid #ffffff;
+    position: absolute;
+    width: 55px;
+    height: auto;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 15px;
+    font-size: 35px;
+    transition: all .2s ease-in-out;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.submitbtn:after{
+    content: '';
+    height: 2px;
+    width: 0%;
+    background: linear-gradient(45deg, rgb(56, 2, 251), rgb(218, 2, 251), rgb(251, 2, 135), rgb(56, 2, 251));
+    position: absolute;
+    left: 15;
+    bottom: 7px;
+    transition: 0.5s;
+}
+
+.submitbtn:hover:after{
+    width:100%;
+    animation: animate1 .8s linear infinite;
+}
+
+.btqtextt {
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    left: 50;
+    top: -100;
+    z-index: 1;
+    font-weight: 700;
+    text-align: left;
+    width: 700;
+    background: none;
+}
+
+.btqtextp {
+    color: white;
+    position: absolute;
+    left: 50;
+    top: 50;
+    font-size: 25;
+    text-align: left;
+    line-height: 1.5;
+    height: 410px;
+    width: 600;
+    overflow: scroll;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+    font-weight: 200;
+}
+
+#scrolldown {
+   cursor: pointer;
+   text-decoration: none;
+   color: white;
+    font-size: 25;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border: 0px solid #ffffff;
+    position: absolute;
+    width: 160px;
+    height: auto;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 15px;
+    left: -15px;
+    bottom: 10px;
+    font-size: 35px;
+    transition: all .2s ease-in-out;
+    font-weight: 700;
+}
+
+#scrolldown::after{
+    content: '';
+    height: 2px;
+    width: 0%;
+    background: linear-gradient(45deg, rgb(56, 2, 251), rgb(218, 2, 251), rgb(251, 2, 135), rgb(56, 2, 251));
+    position: absolute;
+    left: 15;
+    bottom: 11px;
+    transition: 0.5s;
+}
+
+#scrolldown:hover:after {
+    width: 80%;
+    animation: animate3 .8s linear infinite;
+}
+.btqtextp::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+  }
