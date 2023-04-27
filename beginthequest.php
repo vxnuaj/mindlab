@@ -38,12 +38,23 @@
                       <br> - Naval Ravikant
                       <br> <br> you can take action by entering your email.
                  </p>
+                 <form action="index.php" method="post"></form>
+                    <?php
+                    if(isset($_POST['submitbtn'])){
+                        $userEmail = $_POST['email'];
+                        if(filter_var($userEmail, FILTER_VALIDATE_EMAIL)){
+                            echo "Email is correct"
+                        }else{
+                            echo "Invalid Email"
+                        }
+                    }
+                    ?>
                 <div class="inputbox">
                     <input type="text" required="required">
                     <button type="submit" class="submitbtn">join</button>
                     <a class="email">enter email</a>
                     <i></i>
-                </div>
+                </div>form
              </div>   
         </div>
     </body>
