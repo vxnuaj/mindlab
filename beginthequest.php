@@ -40,17 +40,20 @@
                  </p>
                  <form action="index.php" method="post"></form>
                     <?php
+                    $userEmail="";
                     if(isset($_POST['submitbtn'])){
                         $userEmail = $_POST['email'];
                         if(filter_var($userEmail, FILTER_VALIDATE_EMAIL)){
                             echo "Email is correct"
                         }else{
-                            echo "Invalid Email"
+                            ?>
+                            <div class="alert"> Invalid Email</div>
+                            <?php
                         }
                     }
                     ?>
                 <div class="inputbox">
-                    <input type="text" required="required">
+                    <input type="text" required="required" required value="<?php echo  $userEmail?>">
                     <button type="submit" class="submitbtn">join</button>
                     <a class="email">enter email</a>
                     <i></i>
