@@ -17,7 +17,7 @@
                                 <li><a href="">growthlogs.</a></li>
                             </ul>
                         <li><a href="https://www.book.mindlab.lol/">mindbook.</a></li>
-                        <li><a href="/beginthequest.php">begin the quest.</a></li>
+                        <li><a href="https://mindlab.lol/beginthequest">begin the quest.</a></li>
                     </ul>
             </div>
             <img src="/images/mail-dynamic-gradient.png" id="mail">
