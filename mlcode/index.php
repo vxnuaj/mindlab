@@ -6,7 +6,7 @@
     <body>
         <div class="background-image">
             <div class="navbar">
-                    <a href="/index.php" id="mindlab_logo">mindlab.</a>
+                    <a href="mindlab.lol" id="mindlab_logo">mindlab.</a>
                     <ul> 
                         <div class="comdropcontainer"></div>
                         <li><a href="/community.html">community.</a></li>
@@ -17,7 +17,7 @@
                                 <li><a href="">growthlogs.</a></li>
                             </ul>
                         <li><a href="https://www.book.mindlab.lol/">mindbook.</a></li>
-                        <li><a href="/beginthequest.php">begin the quest.</a></li>
+                        <li><a href="https://mindlab.lol/beginthequest">begin the quest.</a></li>
                     </ul>
             </div>
             <div class="content">
