@@ -4,10 +4,10 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-    <?php echo'
+    
         <div class="background-image">
             <div class="navbar">
-                    <a href="/index.php" id="mindlab_logo">mindlab.</a>
+            <?php echo' <a href="/index.php" id="mindlab_logo">mindlab.</a>'; ?>
                     <ul> 
                         <div class="comdropcontainer"></div>
                         <li><a href="/community.html">community.</a></li>
@@ -30,6 +30,5 @@
             <button id="mainbuttons" type="beginthequest"><span></span>begin the quest.</button>
             <img src="images/heart-dynamic-gradient.png" id="heart">
         </div>'
-        ; ?>
     </body>
 </html>
