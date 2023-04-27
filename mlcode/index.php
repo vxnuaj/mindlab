@@ -6,7 +6,7 @@
     <body>
         <div class="background-image">
             <div class="navbar">
-                    <a href="mindlab.lol" id="mindlab_logo">mindlab.</a>
+                    <a href="https://mindlab.lol" id="mindlab_logo">mindlab.</a>
                     <ul> 
                         <div class="comdropcontainer"></div>
                         <li><a href="/community.html">community.</a></li>
