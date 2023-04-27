@@ -4,6 +4,7 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+    <?php echo'
         <div class="background-image">
             <div class="navbar">
                     <a href="/index.php" id="mindlab_logo">mindlab.</a>
@@ -28,6 +29,7 @@
             <button id="mainbuttons" type="learnmore"><span></span>learn more.</button>
             <button id="mainbuttons" type="beginthequest"><span></span>begin the quest.</button>
             <img src="images/heart-dynamic-gradient.png" id="heart">
-        </div>
+        </div>'
+        ; ?>
     </body>
 </html>
