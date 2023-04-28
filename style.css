@@ -231,7 +231,7 @@ span{
     position: relative;
     width: 250px;
     left: 850px;
-    top: 380px;
+    top: 310px;
 }
 
 .inputbox input {
@@ -247,9 +247,9 @@ span{
 }
 
 #entemailtext {
-    color: rgb(190, 19, 19);
+    color: rgb(244, 240, 240);
     position: absolute;
-    top: -210;
+    top: -310;
     left:48;
     letter-spacing: normal;
     font-weight: 700;
@@ -267,7 +267,7 @@ span{
    letter-spacing: normal;
    transition: .3s;
    font-size: 25px;
-   top: -47;
+   top: -1;
    left: 110;
    font-weight: 200;
    text-align: center;
@@ -279,7 +279,7 @@ span{
     transform: translateY(-30px);
     font-size: 15px;
     position: absolute;
-    top: -50;
+    top: 0;
 }
 
 .inputbox i {
@@ -308,13 +308,10 @@ span{
     left: 0;
 } 
 
-input[type=text]{
+input[type=email]{
     color: #ffffff;
     letter-spacing: 1px;
-    font-size:30px;
-    position: absolute;
-    top: -55;
-    left: 3;   
+    font-size:28px;
     font-weight: 200;
     text-align: center;
 }

@@ -38,12 +38,16 @@
                       <br> - Naval Ravikant
                       <br> <br> you can take action by entering your email.
                  </p>
+                <iframe name="ifr" style="display:none"></iframe>
+                 <form action="join.php" element="email" method="get" target="ifr">
                 <div class="inputbox">
-                    <input type="text" required="required">
-                    <button type="submit" class="submitbtn">join</button>
+                    <input type="email" name="emailsub" required="required">
+                    <button type="submit" name="emailsubbtn" class="submitbtn">join</button>
                     <a class="email">enter email</a>
                     <i></i>
                 </div>
+            </form>
+             <?php echo $_GET["emailsub"] ?> 
              </div>   
         </div>
     </body>
