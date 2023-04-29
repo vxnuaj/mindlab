@@ -9,7 +9,7 @@
   },
   "routes": [
     { "src": "/",  "dest": "/api/index.php" },
-    { "src": "/index.php",  "dest": "/api/index.php" },
+    { "src": "/index",  "dest": "/api/index.php" },
     { "src": "/beginthequest",  "dest": "/api/beginthequest.php" }
   ]
 }
