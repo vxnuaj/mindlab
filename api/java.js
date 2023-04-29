@@ -1,3 +1,5 @@
+app.use(express.static(__dirname + "/public/"));
+
 //hello there
 $(document).ready(function() {
     $('#email').submit(function(e) {
@@ -19,4 +21,6 @@ $(document).ready(function() {
       });
     });
   });
+
+
   
