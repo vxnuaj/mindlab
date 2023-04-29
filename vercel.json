@@ -1,19 +1,11 @@
 {
   "functions": {
-    "api/index.php": {
-      "runtime": "vercel-php@0.6.0"
-    },
-    "api/beginthequest.php": {
-      "runtime": "vercel-php@0.6.0"
-    },
-    "api/community.php": {
-      "runtime": "vercel-php@0.6.0"
-    },
-    "api/forums.php": {
-      "runtime": "vercel-php@0.6.0"
-    },
-    "api/growthlogs.php": {
+    "api/*.php": {
       "runtime": "vercel-php@0.6.0"
     }
-  }
+  },
+  "routes": [
+    { "src": "/(.index.php)",  "dest": "/api/(index.php)" }
+    { "src": "/(.beginthequest.php)",  "dest": "/api/(beginthequest.php)" }
+  ]
 }
