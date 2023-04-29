@@ -10,6 +10,9 @@
   "routes": [
     { "src": "/",  "dest": "/api/index.php" },
     { "src": "/index",  "dest": "/api/index.php" },
-    { "src": "/beginthequest",  "dest": "/api/beginthequest.php" }
+    { "src": "/beginthequest",  "dest": "/api/beginthequest.php" },
+    { "src": "/growthlogs",  "dest": "/api/growthlogs.php" },
+    { "src": "/forums",  "dest": "/api/forums.php" },
+    { "src": "/community",  "dest": "/api/community.php" }
   ]
 }
