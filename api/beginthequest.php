@@ -1,10 +1,10 @@
 <html> <!--hi -->
     <head>
         <title>mindlab</title> 
-        <link rel="stylesheet" href="/api/style.css">
         <script src="jquery-3.6.4.min.js"></script>
         <script src="java.js"></script>
         <meta charset="UTF-8">
+        <PHP> echo '<link rel="stylesheet" type="text/css" href="/api/style.css"></head>'; <PHP>
     </head>
     <body>
         <div class="background-image2">
