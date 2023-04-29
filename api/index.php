@@ -30,7 +30,7 @@
             </div>
             <button id="mainbuttons" type="learnmore"><span></span>learn more.</button>
             <button id="mainbuttons" type="beginthequest"><span></span>begin the quest.</button>
-            <img src="images/heart-dynamic-gradient.png" id="heart">
+            <img src="/images/heart-dynamic-gradient.png" id="heart">
         </div>
     </body>
 </html>

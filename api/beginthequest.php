@@ -23,7 +23,7 @@
                         <li><a href="/api/beginthequest.php">begin the quest.</a></li>
                     </ul>
             </div>
-            <img src="images/mail-dynamic-gradient.png" id="mail">
+            <img src="/images/mail-dynamic-gradient.png" id="mail">
             <div class="btqcontent">
                 <span class="btqtextt"><strong id="gradtext">mindlab</strong> is currently <br> under <strong id="gradtext">construction.</strong></span>
                 <p class="btqtextp"> 
