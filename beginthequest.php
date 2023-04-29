@@ -1,6 +1,6 @@
-<html>
+<html> <!--hi -->
     <head>
-        <title>mindlab</title>
+        <title>mindlab</title> 
         <link rel="stylesheet" href="style.css">
         <script src="jquery-3.6.4.min.js"></script>
         <script src="java.js"></script>

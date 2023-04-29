@@ -1,3 +1,4 @@
+//hello there
 $(document).ready(function() {
     $('#email').submit(function(e) {
       e.preventDefault(); // prevent the default form submission behavior
