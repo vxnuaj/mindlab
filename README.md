@@ -1,4 +1,4 @@
 # mindlab
-the mindlab website. 
+hello.
 
 message me via instagram @vxnuaj to contribute
