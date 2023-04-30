@@ -36,7 +36,8 @@
                      <a href="#lesson1" id="scrolldown">lesson #1</a>
                      <br> <br> <br id="lesson1">it's important to remain patient.
                       <br> without patience improvement will be difficult.
-                     <br>do not be too patient. act accordingly when you see the opportunity to do so.
+                     <br>do not be too patient.
+                      <br> act accordingly when you see the opportunity to do so.
                       <br> <br> <i>"impatience with actions, patience with results"</i>
                       <br> - Naval Ravikant
                       <br> <br> you can take action by entering your email.
