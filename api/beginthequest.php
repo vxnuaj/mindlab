@@ -12,7 +12,7 @@
                 <a href="https://www.mindlab.lol" id="mindlab_logo">mindlab.</a>
                     <ul> 
                         <div class="comdropcontainer"></div>
-                        <li><a href="/api/community.php">community.</a></li>
+                        <li><a href="https://www.mindlab.lol/community">community.</a></li>
                             <ul class="communitydropdown">
                                 <br>
                                 <li><a href="">forums.</a></li>
