@@ -20,6 +20,15 @@
     background-size: cover;
     background-position: center;
 }
+/*/background for 404/*/
+.background404 {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+}
+
 #mail{
     width: 25rem;
     height: 25rem;
@@ -226,6 +235,63 @@ span{
    left: 50;
    font-size: 30;
    text-align: center;
+}
+
+.content404 {
+    color: white;
+    position: relative;
+    top: 120;
+    text-align: center;
+    width: auto;
+    height: auto;
+    font-size: 30;
+    font-weight: 600;
+}
+
+.num404 {
+    background: -webkit-linear-gradient(0deg, #fa4462 0%, #2809f4 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 8px rgb(160, 7, 71));
+    position: relative;
+    top: -50;
+    text-align: center;
+    width: auto;
+    height: auto;
+    font-size: 120;
+}
+
+.home404link {
+    position: relative;
+    top: 100;
+    text-align: center;
+    font-weight: 600;
+    font-size: 50;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border: 0px solid #ffffff;
+    height: auto;
+    width: auto;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 15px 15px 15px ;
+    transition: all .4s ease-in-out;
+}
+.home404link:after{
+    content: '';
+    height: 4px;
+    width: 0%;
+    background: linear-gradient(90deg, rgb(56, 2, 251), rgb(218, 2, 251), rgb(251, 2, 135), rgb(56, 2, 251));
+    position: absolute;
+    left: 15;
+    bottom: 7px;
+    transition: 0.5s;
+}
+
+.home404link:hover:after{
+    width: 80%;
+    animation: animate1 .8s linear infinite;
 }
 
 .inputbox{
